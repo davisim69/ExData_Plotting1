@@ -18,7 +18,7 @@ plotData$DateTime<-strptime(plotData$DateTime, format="%d/%m/%Y %H:%M:%S")
 plotData1<-subset(plotData,as.Date(plotData$DateTime) >= "2007-02-01" & as.Date(plotData$DateTime) <= "2007-02-02")
 
 #Plot histogram of Global Active Power
-with(plotData1,hist(GlobalActivePower, main="Global Active Power", xlab="Global Active Power (kilowats)", col="red"))
+with(plotData1,hist(GlobalActivePower, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red"))
 
 #Copy graph to .png file
 dev.copy(png,file="plot1.png")
