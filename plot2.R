@@ -19,7 +19,7 @@ plotData1<-subset(plotData,as.Date(plotData$DateTime) >= "2007-02-01" & as.Date(
 
 #Plot Global Active Power over time
 
-with(plotData1,plot(DateTime,GlobalActivePower, type = "l", xlab="", ylab="Global Active Power (kilowats)"))
+with(plotData1,plot(DateTime,GlobalActivePower, type = "l", xlab="", ylab="Global Active Power (kilowatts)"))
 
 
 #Copy graph to .png file
