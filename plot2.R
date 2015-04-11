@@ -1,6 +1,4 @@
 
-
-setwd("C:/Users/Ian/Documents/DataScience/ExploratoryAnalysis/Data")
 plotData<-read.table(paste(getwd(),"/","household_power_consumption.txt",sep = ""), 
                      header=TRUE, sep=";", stringsAsFactors = FALSE, na.strings="?"
                      ,colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"))
